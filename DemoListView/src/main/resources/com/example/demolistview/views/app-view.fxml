@@ -7,13 +7,10 @@
 <VBox prefHeight="400.0" prefWidth="600.0"
       fx:controller="com.example.demolistview.controllers.AppController"
       xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <Label text="Listado de personas:" />
-      <HBox prefHeight="100.0" prefWidth="200.0">
-         <children>
-            <Button mnemonicParsing="false" text="Recargar" />
-         </children>
-      </HBox>
-      <ListView prefHeight="200.0" prefWidth="200.0" />
-   </children>
+   <Label text="Listado de personas:"/>
+   <HBox prefHeight="100.0" prefWidth="200.0">
+      <Button mnemonicParsing="false" text="Recargar"/>
+   </HBox>
+   <ListView fx:id="listView" prefHeight="200.0" prefWidth="200.0"/>
+   <Label fx:id="lblMsg"/>
 </VBox>

@@ -32,10 +32,10 @@ public class AppController {
             List<String> items = service.loadDataForList();
             data.setAll(items);
             lblMsg.setText("Datos cargados Exitosamente ");
-            lblMsg.setStyle("-fx-text-alignment: green");
+            lblMsg.setStyle("-fx-text-fill: green");
         }catch (IOException e){
             lblMsg.setText(e.getMessage());
-            lblMsg.setStyle("-fx-text-alignment: red");
+            lblMsg.setStyle("-fx-text-fill: red");
         }
     }
 }
